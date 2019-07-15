@@ -1,21 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.lemon</groupId>
-  <artifactId>MavenToJmeter</artifactId>
+  <groupId>com.lf</groupId>
+  <artifactId>test_01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
    <properties>
         <!--指定Maven用什么编码来读取源码及文档 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-		<!-- Maven默认执行Jmeter报告结果生成的路径 -->
+		<!-- Maven默认执行Jmeter报告结果生成的路径 
 		<jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
-		<jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir> 
+		<jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir> -->
 		<!-- Jenkins构建生成报告所在路径 -->
-		<!--
+		
 		<jmeter.result.jtl.dir>${env.WORKSPACE}/Report/${env.BUILD_ID}/jtl</jmeter.result.jtl.dir>
 		<jmeter.result.html.dir>${env.WORKSPACE}/Report/${env.BUILD_ID}/html</jmeter.result.html.dir>
-		-->
+	
     </properties>
 	
 	
@@ -97,4 +97,5 @@
             </plugin>
         </plugins>
     </build>
+  
 </project>
